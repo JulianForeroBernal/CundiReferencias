@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CundiLogin</title>
+</head>
+<body>
+    <main> <!--etiqueta main es una division de la pantalla asi como secction o div pero donde debe ir lo mas importante, lo principal todo lo otro es para dividir otra secciones secundarias-->
+        <section class = "login-card"> <!-- basicamente el cuadro donde va a estar el formato para loguearse
+            ese class es para ponerle estilo con css de formal general a todo lo que tenga esa clase-->
+            <h1>CundiLogin</h1> <!--titulo principal de la pagina-->
+            <p>inicia sesion para revisar, comentar y calificar profesores</p>
+            <form id="loginForm"> <!--es un formulario dentro de el van a haber campos para diligenciar
+                por otro lado el id, es el nombre de ese formulario y servira para que js lo encuentre por su nombre y trabaje con el-->
+                <label for="email">Correo institucional</label> <!--label es el texto asocioado a un
+                campo para llenar t ese for es para hacer referencia a que campo, osea "label para email, y aun campo con identificacion (id) "email-->
+                <input type="email" id="email" name="email" required> <!--tipo emal pide un @ id emal para el label y pra js  lo mismo el name creo y required para que no es pueda saltar-->
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Igresar</button>
+            </form>
+            <div id="loginMessage"></div> 
+        </section>
+    </main>
+    <script src="/static/login.js"></script> <!--enlace al archivo js que tiene la logica del login-->
+<!-- class es para dar estilo general, for para asociar, id para identificar particularmente cada cosa-->
+</body>
+</html>
