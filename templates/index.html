@@ -2,40 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CundiReferencias</title>
+    <title>CundiProfes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <h1 class="logo">CundiProfes</h1> 
+        <ul class="nav-links" > <!--ul listas sin orden, ol listas ordenadas (Order list, Unorder List)-->
+            <li><a href="/">Inicio</a></li> <!--li elemento de la lista (list item)-->
+            <li><a href="/profe.html">Profesores</a></li> <!--la a es para link (a de anchor de ancla) -->
+            <li><a href="/cursos.html">Cursos</a></li> <!--la href es el atributo que define el link-->
+            <li><a href="reportes.html">Reportes</a> </li>
+        </ul>
+    </nav>
+    <main class="home">
+        <section class="hero">
+            <h2>Elige a tu</h2>
+            <h2>Profesor ideal</h2>
+            <p>Plataflorma estudiantil para evaluar y recomendar profesores</p>
+            <a href="/profe.html" class="btn-primary"> Explorar Rrofesoreres</a>
+        </section>
+        <div class="modal-overlay" id="disclamer">
+            <div class="modal-card">
+                <h2>DISCLAMER</h2>
+                <p>Por la naturaleza del anonimato los comentarios recopilados pueden ser mal intencionados o no ir acorde a la realidad. No nos hacemos responsables por la intencionalidad de quien deja una review, por ello mismo, si continúas haciendo uso de la plataforma entiendes que eres responsable del uso que se le da a la información contenida. En caso de encontrar algún comentario que incita al odio, es inapropiado, spam, o más, repórtalo en la sección adecuada.</p>
+            <label class="checkbox-container">
+                <input type="checkbox" id="accept-checkbox">
+                He leido y acepto las condiciones
+            </label>
+            <button id="accept-bottom" disabled>
+                Aceptar
+            </button>                
+            </div>
+        </div>
+    </main>
 
-    <h1>CundiReferencias</h1>
 
-    <section id="filtros">
-        <label>
-            Facultad:
-            <select id="filtroFacultad">
-                <option value="">Todas</option>
-            </select>
-        </label>
-
-        <label>
-            Programa:
-            <select id="filtroPrograma">
-                <option value="">Todos</option>
-            </select>
-        </label>
-
-        <label>
-            Sede:
-            <select id="filtroSede">
-                <option value="">Todas</option>
-            </select>
-        </label>
-    </section>
-
-    <section id="listaProfesores">
-        <!-- Aquí se mostrarán los profesores -->
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
